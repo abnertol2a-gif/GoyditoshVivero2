@@ -1,4 +1,5 @@
 import './Home.css'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -16,18 +17,19 @@ function Home() {
       </section>
 
       <section className="home__grid" aria-label="Siguientes pasos">
-        <article className="home__card">
+        <Link to="/inventario" className="home__card home__card--link">
           <h2>Inventario</h2>
           <p>Registra plantas, precio, stock y categoria.</p>
-        </article>
-        <article className="home__card">
+        </Link>
+        <Link to="/ventas" className="home__card home__card--link">
           <h2>Ventas</h2>
           <p>Prepara la base para controlar pedidos y clientes.</p>
-        </article>
-        <article className="home__card">
+        </Link>
+        <Link to="/reportes" className="home__card home__card--link">
           <h2>Reportes</h2>
           <p>Visualiza rapidamente lo mas vendido de tu vivero.</p>
-        </article>
+
+        </Link>
       </section>
     </main>
   )

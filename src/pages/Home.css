@@ -75,6 +75,24 @@
   backdrop-filter: blur(2px);
 }
 
+.home__card--link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.home__card--link:hover {
+  transform: translateY(-3px);
+  border-color: rgba(36, 88, 36, 0.25);
+  box-shadow: 0 10px 26px rgba(32, 64, 32, 0.16);
+}
+
+.home__card--link:focus-visible {
+  outline: 2px solid #2f6a2f;
+  outline-offset: 2px;
+}
+
 .home__card h2 {
   margin-top: 0;
   margin-bottom: 0.35rem;
@@ -85,6 +103,16 @@
 .home__card p {
   margin: 0;
   color: #466246;
+}
+
+.home__soon {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #6e5c1e;
+  background: #f2e4b8;
 }
 
 @media (max-width: 900px) {
